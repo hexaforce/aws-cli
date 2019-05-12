@@ -1,4 +1,7 @@
 #bin/sh -xe
 
 git clone https://github.com/hexaforce/aws-init.git
-find aws-init -name *.sh | xargs sh
+sh aws-init/dynamodb.sh
+sh aws-init/rds.sh
+sh aws-init/s3.sh
+sh aws-init/sqs.sh
