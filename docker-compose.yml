@@ -63,4 +63,3 @@ networks:
   default:
     external:
       name: aws_local_vpc
-
