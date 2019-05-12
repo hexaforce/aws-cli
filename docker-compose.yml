@@ -61,6 +61,12 @@ services:
     stdin_open: true
     tty: true
 
-
 ### Amazon CLI ###
-
+  aws_cli:
+    image: hexaforce/aws-cli
+    depends_on:
+      - aws_dynamodb
+      - aws_rds
+      - aws_elasticache
+      - aws_s3
+      - aws_sqs
